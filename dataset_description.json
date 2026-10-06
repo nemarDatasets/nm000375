@@ -1,0 +1,52 @@
+{
+  "Name": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Etienne Combrisson",
+    "Ruggero Basanisi",
+    "Sylvain Rheims",
+    "Philippe Kahane",
+    "Julien Bastin",
+    "Andrea Brovelli"
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "Authors' preprocessing (Combrisson et al., 2024, eLife; code https://github.com/brainets/papercode/tree/main/combrisson_pblt_2024)",
+      "Description": "High-gamma power from bipolar SEEG derivations, multitaper (netCDF attributes per subject in the ieeg.json DerivativeDescription), time-locked to the outcome, 256 Hz."
+    },
+    {
+      "Name": "b2dryad_convert059.py",
+      "Description": "Repackaging only: trials concatenated into BrainVision float32 (values unchanged); behaviour and anatomy tables into events/channels TSV. Code in code/."
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5061/dryad.jdfn2z3k4",
+      "URL": "https://datadryad.org/dataset/doi:10.5061/dryad.jdfn2z3k4",
+      "Version": "Dryad version 4 (published 2024-06-12)"
+    }
+  ],
+  "HowToAcknowledge": "Please cite Combrisson E, Basanisi R, Gueguen MCM, Rheims S, Kahane P, Bastin J, Brovelli A (2024) eLife, doi:10.7554/eLife.92938, and the Dryad dataset doi:10.5061/dryad.jdfn2z3k4.",
+  "Funding": [
+    "Agence Nationale de la Recherche"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.7554/elife.92938.3",
+    "https://doi.org/10.1101/2023.05.02.539138",
+    "https://doi.org/10.5061/dryad.jdfn2z3k4",
+    "https://github.com/brainets/papercode/tree/main/combrisson_pblt_2024",
+    "https://zenodo.org/records/11612904"
+  ],
+  "Keywords": [
+    "SEEG",
+    "high-gamma activity",
+    "reinforcement learning",
+    "probabilistic learning",
+    "reward",
+    "punishment",
+    "prefrontal cortex",
+    "insula"
+  ]
+}

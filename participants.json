@@ -1,0 +1,21 @@
+{
+  "source_id": {
+    "Description": "Subject label in the release file names"
+  },
+  "n_trials": {
+    "Description": "Trials in the released high-gamma array"
+  },
+  "n_bipolar_contacts": {
+    "Description": "Bipolar derivations in the released array"
+  },
+  "age": {
+    "Description": "not given in the Dryad release",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "not given in the Dryad release"
+  },
+  "handedness": {
+    "Description": "not given in the Dryad release"
+  }
+}

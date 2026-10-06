@@ -1,0 +1,548 @@
+{
+ "subjects": [
+  {
+   "sub": "sub-01",
+   "trials": 576,
+   "channels": 15,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "73f81acbefb82cf58a57cd521a28dd91db00722bea9862f52a14d12bb11b0d95",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-02",
+   "trials": 576,
+   "channels": 2,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "581e5b01dd33d6580f618053de9322e588c2d29b4b1429f4381845439abe6365",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-03",
+   "trials": 288,
+   "channels": 12,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "ab5b66eb17393eaa133cf9e3dc1ab355985dbde2815564c8e76522e25a3d7d6d",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-04",
+   "trials": 576,
+   "channels": 32,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "02a2f71b6a5953874975a7dae33123422ac5b5794cfb4b9a6f0c3c896bcc36a8",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-05",
+   "trials": 480,
+   "channels": 3,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "a7a254d9c706cc997819c0f823f948ce6c4e5ddb11c02316f14ce437c9f189e7",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-07",
+   "trials": 576,
+   "channels": 5,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "01f3c8309a49203a3c8e550112f8cb28a6d012d8e49092de96594a2ef4dff012",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-08",
+   "trials": 575,
+   "channels": 13,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "595bdc411fd59e784b4371a19d9ef255fe5c82e743485d74c753b99d5a5f2d9b",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-09",
+   "trials": 480,
+   "channels": 17,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "0913d122bdc96e9fd016daba8901389f6fb7fc99ec3e4db27e3299cdc45dad86",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-10",
+   "trials": 576,
+   "channels": 28,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "9c158876c9b2e0acb7767a6b20658bc7ab42c38477293c9d209054632bc30c61",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-11",
+   "trials": 576,
+   "channels": 25,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "60b136314609875c5f4400120fda811c12637a3a1e34d5b4057ce9e6229b1a51",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-12",
+   "trials": 576,
+   "channels": 12,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "b7c870e58bb78978c399b1c988b9a0f1813e252ad8faf7891a898ced5b5ebacc",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-13",
+   "trials": 288,
+   "channels": 21,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "08c3dc6e0d51054de9fdc38efc0938bffbb25df69cf87e0b9c544629e126ba81",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-14",
+   "trials": 576,
+   "channels": 29,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "430422d8734eaa62bd18f4d35164f7db830d0afd40cf38facd1e1024c7ba029d",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-15",
+   "trials": 288,
+   "channels": 13,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "a5cdfb8f34064737e117e0376668f0471f438bd74766becf4a50045269c7525a",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-16",
+   "trials": 384,
+   "channels": 10,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "d8cf537c20d36f66651ac09be9f0f02d34f7f0d679cbdb873ef272b137a5ba26",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  },
+  {
+   "sub": "sub-17",
+   "trials": 288,
+   "channels": 11,
+   "samples_per_trial": 513,
+   "sfreq": 256.0,
+   "t0_index": 128,
+   "sha256_eeg": "99b15fed57b09ea46b87802e3335ae947bfbfa1cd48247066840ae836500159a",
+   "attrs": {
+    "band": "lga",
+    "sfreq": [
+     256.0
+    ],
+    "f": [
+     75
+    ],
+    "n_cycles": [
+     15
+    ],
+    "time_bandwidth": [
+     10
+    ],
+    "method": "mt",
+    "down": [
+     2
+    ]
+   },
+   "trial_labels": [
+    -2,
+    -1,
+    1,
+    2
+   ]
+  }
+ ]
+}

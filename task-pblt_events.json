@@ -1,0 +1,45 @@
+{
+  "onset": {
+    "Description": "Start of the trial segment in the concatenated file (s); each segment covers -0.5 to 1.5 s around the outcome",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Segment length (s)",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "Always 'trial' (one row per released trial)"
+  },
+  "condition": {
+    "Description": "Behaviour table column 'condition'",
+    "Levels": {
+      "rew": "reward-learning condition",
+      "pun": "punishment-learning condition"
+    }
+  },
+  "sample": {
+    "Description": "First sample (0-based) of the trial segment"
+  },
+  "trial_index": {
+    "Description": "1-based position of the trial in the released arrays"
+  },
+  "source_trial_label": {
+    "Description": "Value of the netCDF 'trials' coordinate for this trial, verbatim (matches the behaviour column outcome_index in the release)"
+  },
+  "PE": {
+    "Description": "Behaviour table column 'PE' (prediction error, as released)"
+  },
+  "outcome_index": {
+    "Description": "Behaviour table column 'outcome_index', verbatim"
+  },
+  "outcome": {
+    "Description": "Behaviour table column 'outcome' (displayed outcome, e.g. '+1€', '-0€'), verbatim"
+  },
+  "outcome_time_onset": {
+    "Description": "Time (s) in the concatenated file of the outcome (time 0 of the segment)",
+    "Units": "s"
+  },
+  "outcome_time_sample": {
+    "Description": "Sample (0-based) of the outcome in the concatenated file"
+  }
+}

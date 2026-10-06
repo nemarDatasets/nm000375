@@ -1,0 +1,4 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	roi	hemisphere	status	description
+X'2-X'1	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X'3-X'2	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X'4-X'3	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)

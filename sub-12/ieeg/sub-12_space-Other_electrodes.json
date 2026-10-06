@@ -1,0 +1,6 @@
+{
+  "SpatialReference": "none: no electrode coordinates are included in the source release (x, y, z = n/a)",
+  "hemisphere": {
+    "Description": "Hemisphere of the bipolar derivation(s) using this contact (anatomy xlsx)"
+  }
+}

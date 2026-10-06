@@ -1,0 +1,15 @@
+{
+  "reference": {
+    "Description": "Referencing of the derivation (bipolar: adjacent contacts named in the channel label)"
+  },
+  "roi": {
+    "Description": "Region of interest assigned by the authors (anatomy xlsx column 'roi'), e.g. dlPFC, vmPFC, lOFC, aINS"
+  },
+  "hemisphere": {
+    "Description": "Hemisphere (anatomy xlsx column 'hemisphere')",
+    "Levels": {
+      "L": "left",
+      "R": "right"
+    }
+  }
+}

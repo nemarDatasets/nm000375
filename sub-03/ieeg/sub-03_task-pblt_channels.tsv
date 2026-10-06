@@ -1,0 +1,13 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	roi	hemisphere	status	description
+X'3-X'2	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X'4-X'3	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X'9-X'8	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X'10-X'9	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	L	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X2-X1	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X3-X2	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X4-X3	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X5-X4	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X6-X5	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+X7-X6	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+Q2-Q1	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+Q3-Q2	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)

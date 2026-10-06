@@ -1,0 +1,14 @@
+{
+  "TaskName": "pblt",
+  "TaskDescription": "Probabilistic learning task with reward (gain) and punishment (loss) conditions; trials time-locked to the outcome (-0.5 to 1.5 s).",
+  "SamplingFrequency": 256.0,
+  "PowerLineFrequency": 50,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": "n/a",
+  "iEEGReference": "bipolar (adjacent contacts on the same SEEG shaft, as named)",
+  "RecordingType": "epoched",
+  "EpochLength": 2.00390625,
+  "RecordingDuration": 577.125,
+  "SEEGChannelCount": 12,
+  "DerivativeDescription": "Authors' high-gamma power (netCDF attributes: {\"band\": \"lga\", \"sfreq\": [256.0], \"f\": [75], \"n_cycles\": [15], \"time_bandwidth\": [10], \"method\": \"mt\", \"down\": [2]}); trials concatenated back-to-back, values unchanged."
+}

@@ -1,0 +1,17 @@
+participant_id	source_id	n_trials	n_bipolar_contacts	age	sex	handedness
+sub-01	subject-1	576	15	n/a	n/a	n/a
+sub-02	subject-2	576	2	n/a	n/a	n/a
+sub-03	subject-3	288	12	n/a	n/a	n/a
+sub-04	subject-4	576	32	n/a	n/a	n/a
+sub-05	subject-5	480	3	n/a	n/a	n/a
+sub-07	subject-7	576	5	n/a	n/a	n/a
+sub-08	subject-8	575	13	n/a	n/a	n/a
+sub-09	subject-9	480	17	n/a	n/a	n/a
+sub-10	subject-10	576	28	n/a	n/a	n/a
+sub-11	subject-11	576	25	n/a	n/a	n/a
+sub-12	subject-12	576	12	n/a	n/a	n/a
+sub-13	subject-13	288	21	n/a	n/a	n/a
+sub-14	subject-14	576	29	n/a	n/a	n/a
+sub-15	subject-15	288	13	n/a	n/a	n/a
+sub-16	subject-16	384	10	n/a	n/a	n/a
+sub-17	subject-17	288	11	n/a	n/a	n/a

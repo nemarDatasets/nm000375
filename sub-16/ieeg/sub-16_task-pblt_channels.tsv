@@ -1,0 +1,11 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	roi	hemisphere	status	description
+O2-O1	SEEG	n/a	n/a	n/a	256.0	bipolar	vmPFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O3-O2	SEEG	n/a	n/a	n/a	256.0	bipolar	vmPFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O5-O4	SEEG	n/a	n/a	n/a	256.0	bipolar	vmPFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O7-O6	SEEG	n/a	n/a	n/a	256.0	bipolar	lOFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O8-O7	SEEG	n/a	n/a	n/a	256.0	bipolar	lOFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O9-O8	SEEG	n/a	n/a	n/a	256.0	bipolar	lOFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O10-O9	SEEG	n/a	n/a	n/a	256.0	bipolar	lOFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O11-O10	SEEG	n/a	n/a	n/a	256.0	bipolar	lOFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+O12-O11	SEEG	n/a	n/a	n/a	256.0	bipolar	lOFC	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)
+P3-P2	SEEG	n/a	n/a	n/a	256.0	bipolar	aINS	R	good	high-gamma power of the bipolar derivation (authors' preprocessing)

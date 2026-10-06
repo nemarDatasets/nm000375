@@ -1,0 +1,22 @@
+# Reward and punishment learning: SEEG high-gamma power (derivative)
+
+Preprocessed intracranial (SEEG) high-gamma power from patients performing a probabilistic instrumental learning task
+with a reward condition and a punishment condition. This is a DERIVATIVE dataset: the Dryad release contains only the
+authors' high-gamma power, not raw iEEG.
+
+## Source
+- Dryad: Etienne Combrisson, Ruggero Basanisi, Sylvain Rheims, Philippe Kahane, Julien Bastin, Andrea Brovelli. Data from: Neural interactions in the human frontal cortex dissociate reward and
+  punishment learning. doi:10.5061/dryad.jdfn2z3k4 (version 4, 2024-06-12).
+  License: CC0 1.0 (Dryad record `https://spdx.org/licenses/CC0-1.0.html`; Zenodo replica 11612904 cc-zero).
+- Article: Combrisson et al. (2024) eLife, doi:10.7554/eLife.92938. Code: github.com/brainets/papercode (combrisson_pblt_2024).
+- Original files unchanged in `sourcedata/dryad-jdfn2z3k4/` (zip with netCDF power, behaviour and anatomy xlsx).
+
+## What each file holds
+- `sub-XX/ieeg/sub-XX_task-pblt_ieeg.*`: BrainVision float32. All trials of the released array (n_trials x
+  n_contacts x 513 samples, 256 Hz, -0.5 to 1.5 s around the outcome) placed back-to-back; values are the released
+  float32 values (units not stated in the release: n/a). Segment boundaries and outcome times are in events.tsv.
+- `*_events.tsv`: one row per trial with the behaviour table (condition, prediction error, outcome) verbatim.
+- `*_channels.tsv`: bipolar derivations with the authors' region of interest and hemisphere (anatomy xlsx).
+- The multitaper parameters stored in each netCDF file are copied into the ieeg.json `DerivativeDescription`.
+- Age, sex and handedness are not in the release (n/a). No electrode coordinates are released: electrodes.tsv lists
+  the contacts named in the bipolar labels with x/y/z = n/a.

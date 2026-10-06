@@ -1,0 +1,20 @@
+[
+ {
+  "path": "pblt_dataset_(1).zip",
+  "size": 233569316,
+  "mime": "application/zip",
+  "digest": "1094cdafbf77a86da57ea4e7f17f3a8f29d2b8d8f77037c6370422f44dd9e108",
+  "digestType": "sha-256",
+  "download": "/api/v2/files/3228712/download",
+  "status": "copied"
+ },
+ {
+  "path": "README.md",
+  "size": 1394,
+  "mime": "text/markdown",
+  "digest": "e07d2f19676cab7e55657675f2849f0b72f452ca5599eb6ece51234093416f87",
+  "digestType": "sha-256",
+  "download": "/api/v2/files/3228713/download",
+  "status": "copied"
+ }
+]
