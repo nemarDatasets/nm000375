@@ -1,0 +1,125 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Etienne Combrisson": {
+      "orcid": "0000-0002-7362-3247"
+    },
+    "Ruggero Basanisi": {
+      "orcid": "0000-0003-4776-596X"
+    },
+    "Sylvain Rheims": {
+      "orcid": "0000-0002-4663-8515"
+    },
+    "Philippe Kahane": {
+      "orcid": "0000-0003-1330-3281"
+    },
+    "Julien Bastin": {
+      "orcid": "0000-0002-0533-7564"
+    },
+    "Andrea Brovelli": {
+      "orcid": "0000-0002-5342-1330",
+      "affiliations": [
+        {
+          "name": "Aix-Marseille Université",
+          "identifier": "https://ror.org/035xkbk20",
+          "scheme": "ROR"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5061/dryad.jdfn2z3k4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.7554/elife.92938.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2023.05.02.539138",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000375",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000375",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.7554/eLife.92938",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Agence Nationale de la Recherche"
+    }
+  ],
+  "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "463 MB (34 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".log",
+    ".md",
+    ".py",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".zip"
+  ],
+  "description": "This derivative dataset provides preprocessed stereo-EEG (SEEG) high-gamma power from 16 patients performing a probabilistic instrumental learning task with reward and punishment conditions. Power was computed from bipolar derivations using multitaper analysis and time-locked to outcome at 256 Hz. Trial-wise behavioural variables and anatomical labels accompany the signals, supporting study of frontal cortex interactions in reward and punishment learning.",
+  "methods_description": "High-gamma power was computed from bipolar SEEG derivations using multitaper estimation, time-locked to outcome (-0.5 to 1.5 s, 256 Hz). The released trial arrays were repackaged into BrainVision float32 format, with behaviour and anatomy tables converted into events and channels TSV files.",
+  "keywords": [
+    {
+      "term": "SEEG"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "high-gamma activity"
+    },
+    {
+      "term": "reinforcement learning"
+    },
+    {
+      "term": "probabilistic learning"
+    },
+    {
+      "term": "reward"
+    },
+    {
+      "term": "punishment"
+    },
+    {
+      "term": "prefrontal cortex"
+    },
+    {
+      "term": "insula"
+    }
+  ],
+  "source_hash": "1fd70aa379acd0b2cd11bb9edadc6e79e2c85f19517ab1e8ac6af70260a5e5d2"
+}
