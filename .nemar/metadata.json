@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
-  "description": "This derivative dataset provides preprocessed high-gamma power computed from bipolar stereo-EEG (SEEG) derivations in 16 patients with epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. Power is time-locked to the outcome (-0.5 to 1.5 s, 256 Hz) and is accompanied by trial-wise behavioural data and anatomical labels of the bipolar contacts. The data support investigation of how interactions across frontal cortex and insula dissociate reward and punishment learning.",
-  "methods_description": "High-gamma power was estimated with a multitaper method from bipolar SEEG derivations and time-locked to the outcome, at 256 Hz. Trials were concatenated into BrainVision float32 files. Behavioural tables and anatomy tables were converted to events.tsv and channels.tsv. Patients gave written informed consent and the study was approved by an ethics committee.",
+  "description": "Preprocessed stereotactic EEG (SEEG) high-gamma power (50-100 Hz) from 16 patients with pharmaco-resistant epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. The derivative dataset contains bipolar derivations in anterior insula, dorsolateral prefrontal, lateral orbitofrontal and ventromedial prefrontal cortex, time-locked to the outcome. It supports information-theoretic analyses of how distinct frontal subsystems encode reward and punishment prediction errors.",
+  "methods_description": "Patients with depth electrodes (Dixi) performed a probabilistic instrumental learning task with reward and punishment pairs of abstract cues. Original iEEG was recorded at 512 or 1024 Hz. Bipolar derivations in grey matter were computed, and gamma power (50-100 Hz) was estimated with a multitaper transform, down-sampled to 256 Hz and time-locked to the outcome. Trial-wise prediction errors came from a Q-learning model.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -35,13 +35,10 @@
   },
   "keywords": [
     {
-      "term": "SEEG"
+      "term": "stereotactic EEG"
     },
     {
-      "term": "stereo-EEG"
-    },
-    {
-      "term": "epilepsy"
+      "term": "intracranial EEG"
     },
     {
       "term": "high-gamma activity"
@@ -50,24 +47,24 @@
       "term": "reinforcement learning"
     },
     {
-      "term": "probabilistic learning"
-    },
-    {
       "term": "reward"
     },
     {
       "term": "punishment"
     },
     {
-      "term": "prefrontal cortex"
+      "term": "Prefrontal Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017397"
+    },
+    {
+      "term": "prediction error"
     },
     {
       "term": "insula"
     },
     {
-      "term": "Insular Cortex",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000087623"
+      "term": "information theory"
     }
   ],
   "related_identifiers": [
@@ -84,7 +81,7 @@
     {
       "identifier": "10.1101/2023.05.02.539138",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000375",
@@ -100,11 +97,36 @@
       "identifier": "10.7554/eLife.92938",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41467-021-23704-w",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "Agence Nationale de la Recherche"
+      "funder_name": "Agence Nationale de la Recherche ANR- 13-TECS-0013"
+    },
+    {
+      "funder_name": "Agence Nationale de la Recherche",
+      "award_number": "ANR-18-CE28-0016"
+    },
+    {
+      "funder_name": "Agence Nationale de la Recherche",
+      "award_number": "ANR-17-CE37-0018"
+    },
+    {
+      "funder_name": "Agence Nationale de la Recherche",
+      "award_number": "ANR-13-TECS-0013"
+    },
+    {
+      "funder_name": "HORIZON EUROPE Framework Programme",
+      "award_number": "604102"
+    },
+    {
+      "funder_name": "HORIZON EUROPE Framework Programme",
+      "award_number": "945539"
     }
   ],
   "resource_type_general": "Dataset",
@@ -127,5 +149,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "a86627b312f8b233c6f8fca17b82baa4bf93cefa85a7b4f8489ec08369aa6530"
+  "source_hash": "c5ee65aa09ac55aa8ba4b703eb08e91714b8025ead2605f370aa300f5701bc0a"
 }
