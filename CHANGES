@@ -1,2 +1,8 @@
+1.0.1 2026-10-07
+  - 2026-10-07 metadata enrichment: participants (eLife subject numbers with mapping proof, implant type, ROIs,
+    hemispheres, per-ROI derivation counts; age/sex/handedness cohort-level only), participants.json, ieeg.json
+    task description/instructions/manufacturer/acquisition filters/placement, events/channels levels, funding grant
+    numbers, README sections. Sources: eLife 92938 (PMC11213568), Gueguen et al. 2021 Nat Commun (PMC8184756), Dryad record.
+
 1.0.0 2026-10-06
   - Repackaging of Dryad doi:10.5061/dryad.jdfn2z3k4 (derivative) for NEMAR.

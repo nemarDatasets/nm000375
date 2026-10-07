@@ -1,11 +1,21 @@
 {
   "TaskName": "pblt",
-  "TaskDescription": "Probabilistic learning task with reward (gain) and punishment (loss) conditions; trials time-locked to the outcome (-0.5 to 1.5 s).",
+  "TaskDescription": "Probabilistic instrumental learning task (adapted from Pessiglione et al., 2006; Palminteri et al., 2012): 3 to 6 sessions of 96 trials; in each session four new pairs of abstract cues (Agathodaimon alphabet), each pair presented 24 times, two pairs in a reward condition (+1 EUR vs 0 EUR) and two in a punishment condition (-1 EUR vs 0 EUR), intermingled; within a pair the cues lead to the two outcomes with reciprocal probabilities 0.75/0.25. The chosen cue was coloured red for 250 ms and the outcome was displayed 1000 ms later. Choices with left/right index on a joystick (Logitech Dual Action); 19-inch TFT monitor (60 Hz), Presentation 16.5 (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods 'Behavioral task and set-up'). Released trials are time-locked to the outcome (-0.5 to 1.5 s).",
+  "Instructions": "Written instructions: the goal of the task was to maximize the financial payoff by considering reward-seeking and punishment avoidance as equally important; instructions were reformulated orally if necessary. Training: a short session with two pairs of cues on 16 trials, then 2-3 short sessions of 5 min, until at least 70% correct choices in both conditions (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods).",
   "SamplingFrequency": 256.0,
   "PowerLineFrequency": 50,
   "SoftwareFilters": "n/a",
-  "HardwareFilters": "n/a",
-  "iEEGReference": "bipolar (adjacent contacts on the same SEEG shaft, as named)",
+  "HardwareFilters": {
+    "BandpassFilter": {
+      "Description": "Bandwidth of the original SEEG acquisition (Micromed), before the authors' high-gamma estimation (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods)",
+      "LowCutoff": 0.1,
+      "HighCutoff": 200
+    }
+  },
+  "iEEGReference": "bipolar (adjacent contacts on the same SEEG shaft, as named); original recordings referenced to one contact located in the white matter (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods)",
+  "Manufacturer": "Micromed",
+  "ElectrodeManufacturer": "Dixi",
+  "iEEGPlacementScheme": "Stereotactic SEEG implanted according to the suspected origin of seizures, on clinical grounds only; 5-17 depth electrodes per patient. Only bipolar derivations in grey matter of four ROIs (aINS, dlPFC, lOFC, vmPFC; MarsAtlas/Destrieux labels via IntrAnat) and free of artifacts/epileptic activity were released (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods)",
   "RecordingType": "epoched",
   "EpochLength": 2.00390625,
   "RecordingDuration": 1152.24609375,

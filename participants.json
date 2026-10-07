@@ -1,21 +1,71 @@
 {
+  "participant_id": {
+    "Description": "BIDS participant label = release subject number (subject-N -> sub-NN)"
+  },
   "source_id": {
     "Description": "Subject label in the release file names"
   },
   "n_trials": {
-    "Description": "Trials in the released high-gamma array"
+    "Description": "Trials in the released high-gamma array (sessions of 96 trials; patients performed 3-6 sessions, Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods)",
+    "Units": "count"
   },
   "n_bipolar_contacts": {
-    "Description": "Bipolar derivations in the released array"
+    "Description": "Bipolar derivations in the released array",
+    "Units": "count"
   },
   "age": {
-    "Description": "not given in the Dryad release",
+    "Description": "Not reported per patient in the release or in the eLife article (no per-patient table). Cohort-level (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods 'iEEG data acquisition'): 16 patients, 33.5 +/- 12.4 years old, 10 females. Note: these figures are identical to those of the 20-patient cohort of the original study (Gueguen et al. 2021, Nat Commun 12:3344, doi:10.1038/s41467-021-23704-w, Methods 'Patients': 20 patients, 33.5 +/- 12.4 years, 10 females; Supplementary Table 1: ages 13-57, median 34), so they may describe the 20-patient superset. The patient numbering of Gueguen et al. Supplementary Table 1 (patients 1-20) cannot be matched to this release, so rows stay n/a.",
     "Units": "year"
   },
   "sex": {
-    "Description": "not given in the Dryad release"
+    "Description": "Not reported per patient (see age). Cohort-level: 10 females (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods; same figure as the 20-patient cohort of Gueguen et al. 2021, Nat Commun 12:3344, doi:10.1038/s41467-021-23704-w, which has 10 F / 10 M in Supplementary Table 1).",
+    "Levels": {
+      "M": "male",
+      "F": "female"
+    }
   },
   "handedness": {
-    "Description": "not given in the Dryad release"
+    "Description": "Not reported per patient in the release or the eLife article. The 20-patient superset (Gueguen et al. 2021, Nat Commun 12:3344, doi:10.1038/s41467-021-23704-w, Supplementary Table 1) has 18 right-handed and 2 left-handed patients; mapping to this release not possible.",
+    "Levels": {
+      "R": "right",
+      "L": "left",
+      "A": "ambidextrous"
+    }
+  },
+  "paper_subject": {
+    "Description": "Subject number in Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Figure 1-figure supplement 1B (subjects 1-16). Mapping proof: the per-ROI counts of bipolar derivations (aINS, dlPFC, lOFC, vmPFC) in this release's channels.tsv match the figure uniquely for every subject; release subject-6 is absent, so release subjects 7-17 are paper subjects 6-16."
+  },
+  "implant_type": {
+    "Description": "Stereotactically implanted multi-lead semi-rigid depth electrodes (Dixi, Besancon, France; 0.8 mm diameter, 8-18 contacts 2 mm wide, 1.5 mm apart; 5-17 electrodes per patient) (Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods)",
+    "Levels": {
+      "SEEG": "stereo-EEG depth electrodes"
+    }
+  },
+  "rois": {
+    "Description": "Regions of interest with at least one released bipolar derivation (channels.tsv column roi; authors' anatomy xlsx). aINS: anterior insula; dlPFC: dorsolateral prefrontal cortex; lOFC: lateral orbitofrontal cortex; vmPFC: ventromedial prefrontal cortex"
+  },
+  "hemispheres": {
+    "Description": "Hemisphere(s) of the released bipolar derivations (channels.tsv column hemisphere; authors' anatomy xlsx). Only derivations in the four ROIs were released, so this is not necessarily the full implantation.",
+    "Levels": {
+      "L": "left only",
+      "R": "right only",
+      "L;R": "both hemispheres"
+    }
+  },
+  "n_aINS": {
+    "Description": "Number of released bipolar derivations in the anterior insula (channels.tsv; equals eLife Figure 1-figure supplement 1B)",
+    "Units": "count"
+  },
+  "n_dlPFC": {
+    "Description": "Number of released bipolar derivations in the dorsolateral prefrontal cortex (channels.tsv; equals eLife Figure 1-figure supplement 1B)",
+    "Units": "count"
+  },
+  "n_lOFC": {
+    "Description": "Number of released bipolar derivations in the lateral orbitofrontal cortex (channels.tsv; equals eLife Figure 1-figure supplement 1B)",
+    "Units": "count"
+  },
+  "n_vmPFC": {
+    "Description": "Number of released bipolar derivations in the ventromedial prefrontal cortex (channels.tsv; equals eLife Figure 1-figure supplement 1B)",
+    "Units": "count"
   }
 }

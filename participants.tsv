@@ -1,17 +1,17 @@
-participant_id	source_id	n_trials	n_bipolar_contacts	age	sex	handedness
-sub-01	subject-1	576	15	n/a	n/a	n/a
-sub-02	subject-2	576	2	n/a	n/a	n/a
-sub-03	subject-3	288	12	n/a	n/a	n/a
-sub-04	subject-4	576	32	n/a	n/a	n/a
-sub-05	subject-5	480	3	n/a	n/a	n/a
-sub-07	subject-7	576	5	n/a	n/a	n/a
-sub-08	subject-8	575	13	n/a	n/a	n/a
-sub-09	subject-9	480	17	n/a	n/a	n/a
-sub-10	subject-10	576	28	n/a	n/a	n/a
-sub-11	subject-11	576	25	n/a	n/a	n/a
-sub-12	subject-12	576	12	n/a	n/a	n/a
-sub-13	subject-13	288	21	n/a	n/a	n/a
-sub-14	subject-14	576	29	n/a	n/a	n/a
-sub-15	subject-15	288	13	n/a	n/a	n/a
-sub-16	subject-16	384	10	n/a	n/a	n/a
-sub-17	subject-17	288	11	n/a	n/a	n/a
+participant_id	source_id	n_trials	n_bipolar_contacts	age	sex	handedness	paper_subject	implant_type	rois	hemispheres	n_aINS	n_dlPFC	n_lOFC	n_vmPFC
+sub-01	subject-1	576	15	n/a	n/a	n/a	1	SEEG	aINS;dlPFC;lOFC;vmPFC	R	4	8	2	1
+sub-02	subject-2	576	2	n/a	n/a	n/a	2	SEEG	aINS	R	2	0	0	0
+sub-03	subject-3	288	12	n/a	n/a	n/a	3	SEEG	aINS	L;R	12	0	0	0
+sub-04	subject-4	576	32	n/a	n/a	n/a	4	SEEG	aINS;dlPFC;lOFC;vmPFC	L;R	3	13	7	9
+sub-05	subject-5	480	3	n/a	n/a	n/a	5	SEEG	aINS	L	3	0	0	0
+sub-07	subject-7	576	5	n/a	n/a	n/a	6	SEEG	aINS	R	5	0	0	0
+sub-08	subject-8	575	13	n/a	n/a	n/a	7	SEEG	aINS;dlPFC;vmPFC	R	6	5	0	2
+sub-09	subject-9	480	17	n/a	n/a	n/a	8	SEEG	aINS;lOFC;vmPFC	L;R	9	0	5	3
+sub-10	subject-10	576	28	n/a	n/a	n/a	9	SEEG	aINS;dlPFC;lOFC;vmPFC	L;R	1	10	7	10
+sub-11	subject-11	576	25	n/a	n/a	n/a	10	SEEG	aINS;dlPFC;lOFC;vmPFC	L	8	8	4	5
+sub-12	subject-12	576	12	n/a	n/a	n/a	11	SEEG	aINS;dlPFC	L;R	11	1	0	0
+sub-13	subject-13	288	21	n/a	n/a	n/a	12	SEEG	aINS;dlPFC;lOFC;vmPFC	L;R	10	2	6	3
+sub-14	subject-14	576	29	n/a	n/a	n/a	13	SEEG	dlPFC;lOFC;vmPFC	L	0	18	9	2
+sub-15	subject-15	288	13	n/a	n/a	n/a	14	SEEG	lOFC;vmPFC	R	0	0	9	4
+sub-16	subject-16	384	10	n/a	n/a	n/a	15	SEEG	aINS;lOFC;vmPFC	R	1	0	6	3
+sub-17	subject-17	288	11	n/a	n/a	n/a	16	SEEG	dlPFC;lOFC;vmPFC	L	0	5	4	2

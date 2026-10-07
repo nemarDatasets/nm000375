@@ -3,7 +3,13 @@
     "Description": "Referencing of the derivation (bipolar: adjacent contacts named in the channel label)"
   },
   "roi": {
-    "Description": "Region of interest assigned by the authors (anatomy xlsx column 'roi'), e.g. dlPFC, vmPFC, lOFC, aINS"
+    "Description": "Region of interest assigned by the authors (anatomy xlsx column 'roi'), e.g. dlPFC, vmPFC, lOFC, aINS (definitions: Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods 'Anatomical labeling')",
+    "Levels": {
+      "aINS": "anterior insula (Destrieux: short insular gyri, anterior circular insular sulcus, anterior part of the superior circular insular sulcus)",
+      "dlPFC": "dorsolateral prefrontal cortex (MarsAtlas PFrdli, PFrdls)",
+      "lOFC": "lateral orbitofrontal cortex (MarsAtlas OFCvl, OFCv)",
+      "vmPFC": "ventromedial prefrontal cortex (MarsAtlas PFCvm, OFCv, OFCvm)"
+    }
   },
   "hemisphere": {
     "Description": "Hemisphere (anatomy xlsx column 'hemisphere')",

@@ -8,7 +8,10 @@
     "Units": "s"
   },
   "trial_type": {
-    "Description": "Always 'trial' (one row per released trial)"
+    "Description": "Always 'trial' (one row per released trial)",
+    "Levels": {
+      "trial": "one released trial segment (-0.5 to 1.5 s around the outcome)"
+    }
   },
   "condition": {
     "Description": "Behaviour table column 'condition'",
@@ -27,13 +30,19 @@
     "Description": "Value of the netCDF 'trials' coordinate for this trial, verbatim (matches the behaviour column outcome_index in the release)"
   },
   "PE": {
-    "Description": "Behaviour table column 'PE' (prediction error, as released)"
+    "Description": "Behaviour table column 'PE' (prediction error, as released); trial-wise prediction error from the authors' Q-learning model (learning rate, choice temperature, choice-repetition parameter; Combrisson et al. 2024, eLife 12:RP92938, doi:10.7554/eLife.92938, Methods)"
   },
   "outcome_index": {
     "Description": "Behaviour table column 'outcome_index', verbatim"
   },
   "outcome": {
-    "Description": "Behaviour table column 'outcome' (displayed outcome, e.g. '+1€', '-0€'), verbatim"
+    "Description": "Behaviour table column 'outcome' (displayed outcome, e.g. '+1€', '-0€'), verbatim",
+    "Levels": {
+      "+1€": "reward condition, win 1 euro",
+      "+0€": "reward condition, nothing won",
+      "-0€": "punishment condition, nothing lost",
+      "-1€": "punishment condition, lose 1 euro"
+    }
   },
   "outcome_time_onset": {
     "Description": "Time (s) in the concatenated file of the outcome (time 0 of the segment)",

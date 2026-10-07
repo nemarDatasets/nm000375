@@ -30,7 +30,11 @@
   ],
   "HowToAcknowledge": "Please cite Combrisson E, Basanisi R, Gueguen MCM, Rheims S, Kahane P, Bastin J, Brovelli A (2024) eLife, doi:10.7554/eLife.92938, and the Dryad dataset doi:10.5061/dryad.jdfn2z3k4.",
   "Funding": [
-    "Agence Nationale de la Recherche"
+    "Agence Nationale de la Recherche ANR-18-CE28-0016",
+    "Agence Nationale de la Recherche ANR-17-CE37-0018",
+    "Agence Nationale de la Recherche ANR- 13-TECS-0013",
+    "HORIZON EUROPE Framework Programme 604102",
+    "HORIZON EUROPE Framework Programme 945539"
   ],
   "EthicsApprovals": [
     "All patients gave written informed consent and the study received approval from the ethics committee (CPP 09-CHUG-12, study 0907) and from a competent authority (ANSM no: 2009-A00239-48)."
@@ -40,7 +44,8 @@
     "https://doi.org/10.1101/2023.05.02.539138",
     "https://doi.org/10.5061/dryad.jdfn2z3k4",
     "https://github.com/brainets/papercode/tree/main/combrisson_pblt_2024",
-    "https://zenodo.org/records/11612904"
+    "https://zenodo.org/records/11612904",
+    "https://doi.org/10.1038/s41467-021-23704-w"
   ],
   "Keywords": [
     "SEEG",
@@ -50,6 +55,10 @@
     "reward",
     "punishment",
     "prefrontal cortex",
-    "insula"
+    "insula",
+    "intracranial EEG",
+    "prediction error",
+    "information theory",
+    "derivative"
   ]
 }
