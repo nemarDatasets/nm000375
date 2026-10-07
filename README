@@ -20,3 +20,9 @@ authors' high-gamma power, not raw iEEG.
 - The multitaper parameters stored in each netCDF file are copied into the ieeg.json `DerivativeDescription`.
 - Age, sex and handedness are not in the release (n/a). No electrode coordinates are released: electrodes.tsv lists
   the contacts named in the bipolar labels with x/y/z = n/a.
+
+## Ethics approval
+
+Verbatim from Combrisson E, Basanisi R, Gueguen MCM, Rheims S, Kahane P, Bastin J, Brovelli A (2024). Neural interactions in the human frontal cortex dissociate reward and punishment learning. eLife 12:RP92938. https://doi.org/10.7554/eLife.92938, "Ethics" statement (also in Methods, iEEG data acquisition):
+
+> All patients gave written informed consent and the study received approval from the ethics committee (CPP 09-CHUG-12, study 0907) and from a competent authority (ANSM no: 2009-A00239-48).

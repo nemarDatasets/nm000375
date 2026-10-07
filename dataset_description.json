@@ -32,6 +32,9 @@
   "Funding": [
     "Agence Nationale de la Recherche"
   ],
+  "EthicsApprovals": [
+    "All patients gave written informed consent and the study received approval from the ethics committee (CPP 09-CHUG-12, study 0907) and from a competent authority (ANSM no: 2009-A00239-48)."
+  ],
   "ReferencesAndLinks": [
     "https://doi.org/10.7554/elife.92938.3",
     "https://doi.org/10.1101/2023.05.02.539138",
