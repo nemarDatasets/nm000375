@@ -1,6 +1,11 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
+  "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
+  "description": "This derivative dataset provides preprocessed high-gamma power computed from bipolar stereo-EEG (SEEG) derivations in 16 patients with epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. Power is time-locked to the outcome (-0.5 to 1.5 s, 256 Hz) and is accompanied by trial-wise behavioural data and anatomical labels of the bipolar contacts. The data support investigation of how interactions across frontal cortex and insula dissociate reward and punishment learning.",
+  "methods_description": "High-gamma power was estimated with a multitaper method from bipolar SEEG derivations and time-locked to the outcome, at 256 Hz. Trials were concatenated into BrainVision float32 files. Behavioural tables and anatomy tables were converted to events.tsv and channels.tsv. Patients gave written informed consent and the study was approved by an ethics committee.",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "Etienne Combrisson": {
       "orcid": "0000-0002-7362-3247"
@@ -28,6 +33,43 @@
       ]
     }
   },
+  "keywords": [
+    {
+      "term": "SEEG"
+    },
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "epilepsy"
+    },
+    {
+      "term": "high-gamma activity"
+    },
+    {
+      "term": "reinforcement learning"
+    },
+    {
+      "term": "probabilistic learning"
+    },
+    {
+      "term": "reward"
+    },
+    {
+      "term": "punishment"
+    },
+    {
+      "term": "prefrontal cortex"
+    },
+    {
+      "term": "insula"
+    },
+    {
+      "term": "Insular Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000087623"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.5061/dryad.jdfn2z3k4",
@@ -65,14 +107,11 @@
       "funder_name": "Agence Nationale de la Recherche"
     }
   ],
-  "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
-  "license": "CC0-1.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "463 MB (34 files)"
   ],
@@ -85,41 +124,8 @@
     ".tsv",
     ".vhdr",
     ".vmrk",
+    ".yml",
     ".zip"
   ],
-  "description": "This derivative dataset provides preprocessed stereo-EEG (SEEG) high-gamma power from 16 patients performing a probabilistic instrumental learning task with reward and punishment conditions. Power was computed from bipolar derivations using multitaper analysis and time-locked to outcome at 256 Hz. Trial-wise behavioural variables and anatomical labels accompany the signals, supporting study of frontal cortex interactions in reward and punishment learning.",
-  "methods_description": "High-gamma power was computed from bipolar SEEG derivations using multitaper estimation, time-locked to outcome (-0.5 to 1.5 s, 256 Hz). The released trial arrays were repackaged into BrainVision float32 format, with behaviour and anatomy tables converted into events and channels TSV files.",
-  "keywords": [
-    {
-      "term": "SEEG"
-    },
-    {
-      "term": "stereo-EEG"
-    },
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "high-gamma activity"
-    },
-    {
-      "term": "reinforcement learning"
-    },
-    {
-      "term": "probabilistic learning"
-    },
-    {
-      "term": "reward"
-    },
-    {
-      "term": "punishment"
-    },
-    {
-      "term": "prefrontal cortex"
-    },
-    {
-      "term": "insula"
-    }
-  ],
-  "source_hash": "1fd70aa379acd0b2cd11bb9edadc6e79e2c85f19517ab1e8ac6af70260a5e5d2"
+  "source_hash": "a86627b312f8b233c6f8fca17b82baa4bf93cefa85a7b4f8489ec08369aa6530"
 }
