@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
-  "description": "Preprocessed stereotactic EEG (SEEG) high-gamma power from 16 patients with pharmaco-resistant focal epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. The derivative data cover bipolar derivations in anterior insula, dorsolateral prefrontal cortex, lateral orbitofrontal cortex and ventromedial prefrontal cortex, time-locked to outcome at 256 Hz. The original study used information-theoretic analyses to identify separable reward and punishment subsystems in the frontal cortex.",
-  "methods_description": "Depth iEEG was recorded with a Micromed system (512 or 1024 Hz) using Dixi electrodes, and bipolar derivations were computed between adjacent grey-matter contacts. Artifact- and spike-contaminated sites were removed by visual inspection. Gamma power (50-100 Hz) was estimated with a multitaper transform and down-sampled to 256 Hz. The article describes smoothing with a 10-point Savitzky-Golay filter, but the release does not state whether the released values include it. Patients performed a probabilistic instrumental learning task with reward and punishment cue pairs, and trial-wise prediction errors came from a Q-learning model.",
+  "description": "Preprocessed stereotactic EEG (SEEG) high-gamma power (50-100 Hz) from 16 patients with pharmaco-resistant epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. Data cover 248 bipolar derivations in the anterior insula, dorsolateral prefrontal cortex, lateral orbitofrontal cortex and ventromedial prefrontal cortex, time-locked to outcome. The derivative release supports information-theoretic analyses showing dissociable reward and punishment subsystems in the human frontal cortex.",
+  "methods_description": "Depth electrode iEEG was recorded with a Micromed system (512 or 1024 Hz) in patients undergoing presurgical evaluation. Bipolar grey-matter derivations were computed, and gamma power (50-100 Hz) was estimated by multitaper transform, downsampled to 256 Hz and smoothed. Patients performed a probabilistic instrumental learning task with reward and punishment pairs of abstract cues, and trial-wise prediction errors were derived from a Q-learning model.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -38,6 +38,9 @@
       "term": "stereotactic EEG"
     },
     {
+      "term": "intracranial EEG"
+    },
+    {
       "term": "high-gamma activity"
     },
     {
@@ -50,24 +53,12 @@
       "term": "punishment"
     },
     {
-      "term": "prefrontal cortex"
+      "term": "Prefrontal Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017397"
     },
     {
       "term": "prediction error"
-    },
-    {
-      "term": "insula"
-    },
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "information theory"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     }
   ],
   "related_identifiers": [
