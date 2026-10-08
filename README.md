@@ -1,0 +1,98 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000375-blue)](https://doi.org/10.82901/nemar.nm000375)
+
+# Reward and punishment learning: SEEG high-gamma power (derivative)
+
+## Overview
+Preprocessed intracranial (SEEG) high-gamma power from patients performing a probabilistic instrumental learning task
+with a reward condition and a punishment condition. This is a DERIVATIVE dataset: the Dryad release contains only the
+authors' high-gamma power, not raw iEEG.
+
+The article (Combrisson et al., 2024, eLife) used information theory (mutual information, interaction information,
+transfer entropy) on gamma power from four regions (anterior insula aINS, dorsolateral prefrontal cortex dlPFC, lateral
+orbitofrontal cortex lOFC, ventromedial prefrontal cortex vmPFC) to show a reward subsystem (lOFC-vmPFC, driven by vmPFC)
+and a punishment subsystem (aINS-dlPFC, driven by aINS), interacting synergistically (dlPFC-vmPFC) when encoding
+prediction errors. The patients and task are those of Gueguen et al. (2021, Nat Commun, doi:10.1038/s41467-021-23704-w).
+
+## Participants / cohort
+- 16 patients with pharmaco-resistant focal epilepsy undergoing presurgical evaluation with stereotactic intracerebral
+  EEG, recorded at the clinical neurophysiology epilepsy departments of Grenoble and Lyon Hospitals (France) (eLife,
+  Methods). The per-patient recording site and recording years are not given.
+- Cohort demographics reported by the eLife article: 33.5 ± 12.4 years old, 10 females. These numbers are identical to
+  those of the 20-patient cohort of Gueguen et al. (2021) from which the patients come (Gueguen et al. Supplementary
+  Table 1: 20 patients, 10 F / 10 M, ages 13-57, 18 right- and 2 left-handed). That table cannot be matched patient by
+  patient to this release, so age, sex and handedness are n/a per participant.
+- `participants.tsv:paper_subject` gives the subject number used in eLife Figure 1-figure supplement 1 (subjects 1-16);
+  the mapping was proven by matching the per-ROI derivation counts of every subject (release subject-6 does not exist,
+  so release subjects 7-17 are paper subjects 6-16). The release contains 248 bipolar derivations (aINS 75, dlPFC 70,
+  lOFC 59, vmPFC 44), the numbers reported in the article.
+
+## Task
+Probabilistic instrumental learning task (eLife Methods): after training, 3 to 6 sessions of 96 trials; each session has
+four new pairs of abstract cues (Agathodaimon alphabet), each presented 24 times; two pairs are rewarding (+1€ vs 0€) and
+two punishing (-1€ vs 0€), intermingled, with reciprocal outcome probabilities 0.75/0.25 within a pair. The chosen cue
+turned red for 250 ms and the outcome appeared 1000 ms later. Patients were instructed to maximize their payoff, treating
+reward-seeking and punishment avoidance as equally important. Responses: left/right index on a joystick; stimuli on a
+19-inch 60 Hz monitor with Presentation 16.5. Trial counts per patient (288-576) correspond to these 3-6 sessions.
+
+## Acquisition (original recordings)
+Micromed audio-video-EEG monitoring system; depth iEEG sampled at 512 Hz or 1024 Hz, 0.1-200 Hz bandwidth; reference: one
+contact located in the white matter. Dixi depth electrodes (0.8 mm diameter, 8-18 contacts 2 mm wide, 1.5 mm apart),
+5-17 electrodes per patient, implanted on clinical grounds only. Contacts localized on post-implant CT or MRI co-registered
+with the pre-implant MRI (IntrAnat; MarsAtlas and Destrieux parcellations) (eLife Methods). Per-patient sampling rates
+are not given.
+
+## Preprocessing applied by the authors (eLife Methods)
+Bipolar derivations between adjacent contacts; only grey-matter derivations in the four ROIs; recording sites with
+artifacts or pathological activity (e.g. epileptic spikes) removed by visual inspection. Gamma power (50-100 Hz) by a
+multitaper transform (9 Slepian tapers, 15 cycles, 200 ms, 10 Hz time-bandwidth, centred at 75 Hz), down-sampled to
+256 Hz and smoothed with a 10-point Savitzky-Golay filter (MNE-Python). Trial-wise prediction errors from a Q-learning
+model with learning rate, choice temperature and choice-repetition parameters.
+
+## Source
+- Dryad: Etienne Combrisson, Ruggero Basanisi, Sylvain Rheims, Philippe Kahane, Julien Bastin, Andrea Brovelli. Data from: Neural interactions in the human frontal cortex dissociate reward and
+  punishment learning. doi:10.5061/dryad.jdfn2z3k4 (version 4, 2024-06-12).
+  License: CC0 1.0 (Dryad record `https://spdx.org/licenses/CC0-1.0.html`; Zenodo replica 11612904 cc-zero).
+- Article: Combrisson et al. (2024) eLife, doi:10.7554/eLife.92938. Code: github.com/brainets/papercode (combrisson_pblt_2024).
+- Original files unchanged in `sourcedata/dryad-jdfn2z3k4/` (zip with netCDF power, behaviour and anatomy xlsx).
+
+## What each file holds
+- `sub-XX/ieeg/sub-XX_task-pblt_ieeg.*`: BrainVision float32. All trials of the released array (n_trials x
+  n_contacts x 513 samples, 256 Hz, -0.5 to 1.5 s around the outcome) placed back-to-back; values are the released
+  float32 values (units not stated in the release: n/a). Segment boundaries and outcome times are in events.tsv.
+- `*_events.tsv`: one row per trial with the behaviour table (condition, prediction error, outcome) verbatim.
+- `*_channels.tsv`: bipolar derivations with the authors' region of interest and hemisphere (anatomy xlsx).
+- The multitaper parameters stored in each netCDF file are copied into the ieeg.json `DerivativeDescription`.
+- Age, sex and handedness are not in the release (n/a). No electrode coordinates are released: electrodes.tsv lists
+  the contacts named in the bipolar labels with x/y/z = n/a.
+
+## Known caveats
+- Derivative only (high-gamma power, units not stated); no raw iEEG, no electrode coordinates.
+- Age, sex and handedness are not available per patient; the cohort figures in the eLife article match the 20-patient
+  superset of Gueguen et al. (2021) and may not describe exactly these 16 patients.
+- The eLife Methods state 512 Hz for six patients and 1024 Hz for 12 patients (18, for a cohort of 16); per-patient
+  values are not given.
+- Whether the released values include the 10-point Savitzky-Golay smoothing described in the article is not stated in the
+  release.
+
+## How to load
+```python
+from mne_bids import BIDSPath, read_raw_bids
+raw = read_raw_bids(BIDSPath(root=".", subject="01", task="pblt", datatype="ieeg"))
+# trial segments and outcome times: sub-01/ieeg/sub-01_task-pblt_events.tsv
+```
+
+## Citation
+Combrisson E, Basanisi R, Gueguen MCM, Rheims S, Kahane P, Bastin J, Brovelli A (2024). Neural interactions in the human
+frontal cortex dissociate reward and punishment learning. eLife 12:RP92938. doi:10.7554/eLife.92938. Data:
+doi:10.5061/dryad.jdfn2z3k4. Original cohort: Gueguen MCM et al. (2021) Nat Commun 12:3344.
+
+## Provenance of the metadata
+Dryad record (API v2, version 4) and release README; eLife article full text (PMC11213568, CC BY), including Figure
+1-figure supplement 1; Gueguen et al. 2021 (PMC8184756) and its Supplementary Information (Supplementary Table 1).
+Enriched 2026-10-07.
+
+## Ethics approval
+
+Verbatim from Combrisson E, Basanisi R, Gueguen MCM, Rheims S, Kahane P, Bastin J, Brovelli A (2024). Neural interactions in the human frontal cortex dissociate reward and punishment learning. eLife 12:RP92938. https://doi.org/10.7554/eLife.92938, "Ethics" statement (also in Methods, iEEG data acquisition):
+
+> All patients gave written informed consent and the study received approval from the ethics committee (CPP 09-CHUG-12, study 0907) and from a competent authority (ANSM no: 2009-A00239-48).
