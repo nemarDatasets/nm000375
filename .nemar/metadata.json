@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
-  "description": "Preprocessed stereotactic EEG (SEEG) high-gamma power (50-100 Hz) from 16 patients with pharmaco-resistant epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. The derivative dataset contains bipolar derivations in anterior insula, dorsolateral prefrontal, lateral orbitofrontal and ventromedial prefrontal cortex, time-locked to the outcome. It supports information-theoretic analyses of how distinct frontal subsystems encode reward and punishment prediction errors.",
-  "methods_description": "Patients with depth electrodes (Dixi) performed a probabilistic instrumental learning task with reward and punishment pairs of abstract cues. Original iEEG was recorded at 512 or 1024 Hz. Bipolar derivations in grey matter were computed, and gamma power (50-100 Hz) was estimated with a multitaper transform, down-sampled to 256 Hz and time-locked to the outcome. Trial-wise prediction errors came from a Q-learning model.",
+  "description": "Preprocessed stereotactic EEG (SEEG) high-gamma power from 16 patients with pharmaco-resistant focal epilepsy performing a probabilistic instrumental learning task with reward and punishment conditions. The derivative data cover bipolar derivations in anterior insula, dorsolateral prefrontal cortex, lateral orbitofrontal cortex and ventromedial prefrontal cortex, time-locked to outcome at 256 Hz. The original study used information-theoretic analyses to identify separable reward and punishment subsystems in the frontal cortex.",
+  "methods_description": "Depth iEEG was recorded with a Micromed system (512 or 1024 Hz) using Dixi electrodes, and bipolar derivations were computed between adjacent grey-matter contacts. Artifact- and spike-contaminated sites were removed by visual inspection. Gamma power (50-100 Hz) was estimated with a multitaper transform and down-sampled to 256 Hz. The article describes smoothing with a 10-point Savitzky-Golay filter, but the release does not state whether the released values include it. Patients performed a probabilistic instrumental learning task with reward and punishment cue pairs, and trial-wise prediction errors came from a Q-learning model.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -38,9 +38,6 @@
       "term": "stereotactic EEG"
     },
     {
-      "term": "intracranial EEG"
-    },
-    {
       "term": "high-gamma activity"
     },
     {
@@ -53,9 +50,7 @@
       "term": "punishment"
     },
     {
-      "term": "Prefrontal Cortex",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017397"
+      "term": "prefrontal cortex"
     },
     {
       "term": "prediction error"
@@ -64,7 +59,15 @@
       "term": "insula"
     },
     {
+      "term": "intracranial EEG"
+    },
+    {
       "term": "information theory"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     }
   ],
   "related_identifiers": [
@@ -81,7 +84,7 @@
     {
       "identifier": "10.1101/2023.05.02.539138",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000375",
@@ -149,5 +152,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "c5ee65aa09ac55aa8ba4b703eb08e91714b8025ead2605f370aa300f5701bc0a"
+  "source_hash": "ddfa57c2024fd46089f50683030db499642bcabbc588ee5861297b81b524fe59"
 }
