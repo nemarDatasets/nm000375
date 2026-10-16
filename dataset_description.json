@@ -1,5 +1,5 @@
 {
-  "Name": "Combrisson-2024-neural-10.7554/elife.92938",
+  "Name": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC0-1.0",
@@ -62,5 +62,5 @@
     "derivative"
   ],
   "DatasetDOI": "10.82901/nemar.nm000375",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
