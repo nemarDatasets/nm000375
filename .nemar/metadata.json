@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Combrisson-2024-neural-10.7554/elife.92938",
+  "title": "Neural interactions in the human frontal cortex dissociate reward and punishment learning (Combrisson et al., 2024): preprocessed SEEG high-gamma power, 16 patients (derivative)",
   "description": "This derivative dataset provides high-gamma power (50-100 Hz) computed from bipolar stereotactic EEG derivations in 16 patients with pharmaco-resistant epilepsy. The patients performed a probabilistic instrumental learning task with reward and punishment conditions. Recordings cover four frontal regions: anterior insula, dorsolateral prefrontal cortex, lateral orbitofrontal cortex and ventromedial prefrontal cortex. The data were used to show dissociable reward and punishment subsystems using information-theoretic analyses. Raw iEEG is not included.",
   "methods_description": "Depth SEEG was recorded with a Micromed system at 512 or 1024 Hz. Bipolar derivations between adjacent grey-matter contacts were computed, and artifactual or pathological sites were removed. Gamma power (50-100 Hz) was estimated with a multitaper transform, down-sampled to 256 Hz, and time-locked to the outcome (-0.5 to 1.5 s). Trial-wise prediction errors came from a Q-learning model. Patients performed a probabilistic instrumental learning task with reward and punishment cue pairs.",
   "license": "CC0-1.0",
@@ -143,5 +143,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "ff1fd63685fdf429f01323187830d4f8e49cbd9c5ec2afe1a5441ad2d92b6206"
+  "source_hash": "fe57363d21488203b60a69a97ac80827a3ad2463206fbcdbdd450b20ee5610cf"
 }

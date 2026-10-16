@@ -1,3 +1,6 @@
+1.0.2 2026-10-16
+  - Restore the descriptive dataset Name recorded in the v1.0.0 history. Update generated metadata title and source hash.
+
 1.0.1 2026-10-07
   - 2026-10-07 metadata enrichment: participants (eLife subject numbers with mapping proof, implant type, ROIs,
     hemispheres, per-ROI derivation counts; age/sex/handedness cohort-level only), participants.json, ieeg.json
